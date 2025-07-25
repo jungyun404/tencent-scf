@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.disable('x-powered-by') // Disable the X-Powered-By header
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
